@@ -1,14 +1,17 @@
+/* Règle 32: Favoriser les polices standards */
 body {
 	font-family: Arial, sans-serif;
 	color: #333;
 	line-height: 1.6;
 }
 
+/* Règle 37: Préférer les CSS aux images - effet visuel au survol */
 .main-banner img[src="img/global.png"] {
 	position: relative;
 	transition: all 0.3s ease;
 }
 
+/* Règle 37: Préférer les CSS aux images - effet de luminosité au survol */
 .main-banner img[src="img/global.png"]:hover {
 	filter: brightness(0.7);
 }
@@ -18,6 +21,7 @@ body {
 	display: inline-block;
 }
 
+/* Règle 37: Préférer les CSS aux images - ajout d'un élément visuel au survol */
 .main-banner:hover::after {
 	content: "+";
 	position: absolute;
@@ -31,6 +35,7 @@ body {
 	pointer-events: none;
 }
 
+/* Règle 37: Préférer les CSS aux images - création du logo via CSS plutôt qu'une image */
 .logo {
 	background-color: #003366;
 	color: white;
@@ -44,6 +49,7 @@ body {
 	border-radius: 0;
 }
 
+/* Règle 12: Favoriser un design simple, épuré, adapté au web */
 .navbar {
 	padding: 1rem 0;
 	background-color: white;
@@ -56,6 +62,7 @@ body {
 	color: #333;
 }
 
+/* Règle 12: Favoriser un design simple, épuré, adapté au web - conteneur principal avec largeur limitée */
 .content-container {
 	max-width: 1140px;
 	margin: 0 auto;
@@ -67,6 +74,7 @@ body {
 	margin-bottom: 2rem;
 }
 
+/* Règle 12: Favoriser un design simple, épuré, adapté au web */
 .intro-text h1 {
 	font-size: 2rem;
 	font-weight: 600;
@@ -137,6 +145,7 @@ body {
 	margin-top: 2rem;
 }
 
+/* Règle 37: Préférer les CSS aux images - utilisation de filtres CSS pour les effets visuels */
 .expedition-images img {
 	filter: grayscale(100%);
 	width: 18%;
@@ -160,6 +169,7 @@ body {
 	margin-bottom: 2rem;
 }
 
+/* Règle 12: Favoriser un design simple, épuré, adapté au web - utilisation d'une grille CSS */
 .monsters-grid {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
@@ -176,6 +186,7 @@ body {
 	align-items: center;
 }
 
+/* Règle 49: Préférer les glyphs aux images - utilisation d'icônes au lieu d'images */
 .monster-icon {
 	display: flex;
 	justify-content: center;
@@ -255,11 +266,13 @@ body {
 	padding: 1.5rem 0;
 }
 
+/* Règle 58: Remplacer les boutons officiels de partage des réseaux sociaux */
 .social-icons {
 	display: flex;
 	gap: 1.5rem;
 }
 
+/* Règle 49: Préférer les glyphs aux images - utilisation d'icônes Bootstrap */
 .social-icon i {
 	font-size: 1.25rem;
 	color: #333;
@@ -270,7 +283,7 @@ body {
 	color: #555;
 }
 
-
+/* Règle 4: Privilégier une approche mobile first - Media queries pour adapter l'affichage */
 @media (max-width: 768px) {
 	.col-md-6 {
 		padding: 0 1rem;
